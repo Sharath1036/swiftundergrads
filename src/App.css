@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.container-fluid, .container {
+  overflow: hidden;
+}
+
+.navbar-custom {
+  background: transparent;
+  color: white;
+}
+
+.navbar-brand, .navbar-nav.ml-auto li a {
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.fixed-top.scrolled {
+  background-color: #000000 !important;
+  transition: background-color 200ms linear;
+  color: white;
+}
+
+.navbar-brand.scrolled, .navbar-nav.ml-auto.scrolled li a, .nav-item.dropdown.show a {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.obj {
+  object-fit: cover;
+}
+
+#dropbg {
+  background: black;
+}
+
+.dropdown-item:hover {
+  background: #141414;
+}
+
+.bg1 {
+  background: url('images/classroom.jpg');
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+.bg5 {
+  background: url('images/engineer.jpg');
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+.bg4 {
+  background: url('images/team.jpg');
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+.bg6 {
+  background: url('images/pharmacy.jpg');
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+.bg7{
+  background: url('images/contact.jpg');
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+.para1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.bg2 {
+  background: rgb(233, 231, 231);
+}
+
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.item img {
+  width: 1200px; 
+  height: 160px;
+  object-fit: contain;
+}
+
+.bg-custom {
+  background: BLACK;
+}
+
+.carousel-inner img {
+  height: 550px;
+  object-fit: cover;
+}
+
+.carousel-caption h5{
+  color: black;
+  font-size: 32px;
+}
+
+.bg-transparent img {
+  object-fit: cover;
+}
+
+.socials{
+  width: 60px;
+  display: inline-block;
+}
+
+.icons{
+  width: 50px;
+  height: 50px;
+}
+
+.card h3 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-size: 36px;
+  color: rgb(158, 38, 58);
+}
+
+.cards p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+.lead {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+
+.font1 {
+  font-size: 40px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.arial {
+  font-family: Merriweather, Arial;
+}
+
+.bg-footer {
+  background: #000000;
+  height: 100px;
+}
+
+.text-center p {
+  font-size: 22px;
+  color: white;
+  padding: 35px;
+}
+
+.brdr{
+  border-top: 10px solid rgb(118, 209, 118);
+}
+
+.card-name {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
