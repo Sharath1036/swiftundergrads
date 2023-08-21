@@ -36,7 +36,7 @@ export default function Testimonials() {
         <h5 class="card-name m-0">{item.title}</h5>
         <img class="mt-4" src={require("../images/double-quote-bottom.png")} width="10%" height="10%" />
         <p class="text-dark card-text m-3">{item.description}</p>  
-        <h3 class="m-3">{item.name}</h3>
+        <h3 class="mt-5 mb-3">{item.name}</h3>
         <p class="text-dark txt-clg">{item.college}</p>
         </div>
       </div>
