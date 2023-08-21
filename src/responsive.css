@@ -70,4 +70,8 @@
   .mgn {
     margin-top: 20px;
   }
+
+  .brdr {
+    width: 80%;
+  }
 }

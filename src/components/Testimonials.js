@@ -30,14 +30,14 @@ export default function Testimonials() {
     console.log(item);
 
     return (
-      <div class="card mb-5 rounded shadow mx-auto d-block w-75 text-center brdr">
+      <div class="card mb-5 shadow mx-auto d-block text-center brdr">
         <div class="card-item">
         <img class="rounded-circle mt-5 mb-3" src={item.image} width="150" height="150" />
         <h5 class="card-name m-0">{item.title}</h5>
-        <p class="text-dark card-text">{item.description}</p>  
-        <h5 class="card-name">{item.name}</h5>
-        <p class="text-dark">{item.college}</p>
-    {/* <p><img src={require("../images/double-quote-bottom.png")} width="10%" height="10%" /></p> */}
+        <img class="mt-4" src={require("../images/double-quote-bottom.png")} width="10%" height="10%" />
+        <p class="text-dark card-text m-3">{item.description}</p>  
+        <h3 class="m-3">{item.name}</h3>
+        <p class="text-dark txt-clg">{item.college}</p>
         </div>
       </div>
     );
