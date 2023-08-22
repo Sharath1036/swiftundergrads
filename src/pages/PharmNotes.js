@@ -25,7 +25,7 @@ export default function PharmNotes () {
               <div class="card-body">
                 <h5 class="card-title">PHARMACEUTICS-I</h5>
                 <p>NIRALI PRAKASHAN</p>
-                <a href="#" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+                <a href="https://drive.google.com/file/d/1dzDceVMkhPKLptUb0c-IQZNscPvZfZgL/view?usp=sharing" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function PharmNotes () {
               <div class="card-body">
                 <h5 class="card-title">PHARMACEUTICAL ANALYSIS</h5>
                 <p>NIRALI PRAKASHAN</p>
-                <a href="#" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+                <a href="https://drive.google.com/file/d/1eAZdi3dqzHD7YGx7sU8nBDCZfndYOGyC/view?usp=sharing" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function PharmNotes () {
               <div class="card-body">
                 <h5 class="card-title">HUMAN ANATOMY & PHYSIOLOGY-I</h5>
                 <p>NIRALI PRAKASHAN</p>
-                <a href="#" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+                <a href="https://drive.google.com/file/d/1dtmZ995DCO-JmEagCnf0No9Qlu4F129e/view?usp=sharing" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function PharmNotes () {
               <div class="card-body">
                 <h5 class="card-title">INORGANIC CHEMISTRY</h5>
                 <p>NIRALI PRAKASHAN</p>
-                <a href="#" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+                <a href="https://drive.google.com/file/d/1e9nXu8hLd0Y75sAzR2uF45rtV0kvSz9-/view?usp=sharing" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function PharmNotes () {
               <div class="card-body">
                 <h5 class="card-title">REMEDIAL BIOLOGY</h5>
                 <p>NIRALI PRAKASHAN</p>
-                <a href="#" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+                <a href="https://drive.google.com/file/d/1eAuae42LPBEV1uE0NGgvtbg34VTMi_nQ/view?usp=sharing" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function PharmNotes () {
               <div class="card-body">
                 <h5 class="card-title">REMEDIAL MATHS</h5>
                 <p>NIRALI PRAKASHAN</p>
-                <a href="#" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+                <a href="https://drive.google.com/file/d/1eBOM8AQnCi1F1LdFBPr7dUX663fb1FlS/view?usp=sharing" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function PharmNotes () {
               <div class="card-body">
                 <h5 class="card-title">COMMUNICATION SKILLS</h5>
                 <p>CAREWELL PHARMA</p>
-                <a href="#" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+                <a href="https://drive.google.com/file/d/1E0jB72Xfs7UwXpxIlzJVCOBRp01XTXBE/view?usp=sharing" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
               </div>
             </div>
           </div>
