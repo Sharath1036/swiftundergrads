@@ -18,8 +18,8 @@
     display: block;
   }
 
-  .mgn {
-    margin-top: 20px;
+  .card-text {
+    text-align: justify;
   }
 }
 
@@ -42,10 +42,6 @@
     margin: auto;
     display: block;
   }
-
-  .mgn {
-    margin-top: 20px;
-  }
 }
 
 /* Tablets, Ipads, Mobiles in desktop mode */
@@ -67,10 +63,6 @@
 
 /* Laptops and Desktops, Large screens */
 @media (min-width: 1025px) {
-  .mgn {
-    margin-top: 20px;
-  }
-
   .brdr {
     width: 80%;
   }
