@@ -36,10 +36,11 @@ export default function Home() {
       <hr/>
 
       <div class="mb-5">
-      <h3 class="mb-5">OUR SOCIALS</h3>
-      <div class="socials"><a href="https://www.github.com/Sharath1036/"><img alt="image" class="icons" src={require("../images/instagram.png")} /></a></div>
-      <div class="socials"><a href="https://www.behance.net/sharathp2/"><img alt="image" class="icons" src={require("../images/linkedin.png")} /></a></div>
-      <div class="socials"><a href="https://www.linkedin.com/in/sharathpai107"><img alt="instagram" class="icons" src={require("../images/telegram.webp")} /></a></div>
+      <h3 class="mb-5 arial">OUR SOCIALS</h3>
+      <div class="socials"><a href="mailto:swiftundergrads@gmail.com"><img alt="gmail" class="icons" src={require("../images/gmail.webp")} /></a></div>
+      <div class="socials"><a href="https://www.github.com/Sharath1036/"><img alt="instagram" class="icons" src={require("../images/instagram.png")} /></a></div>
+      <div class="socials"><a href="https://www.behance.net/sharathp2/"><img alt="linkedin" class="icons" src={require("../images/linkedin.png")} /></a></div>
+      <div class="socials"><a href="https://www.linkedin.com/in/sharathpai107"><img alt="telegram" class="icons" src={require("../images/telegram.webp")} /></a></div>
       </div>
 
       <div ><Footer /></div>

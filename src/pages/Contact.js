@@ -1,5 +1,4 @@
 import React from 'react';
-
 import "../App.css";
 import "../responsive.css";
 import Navbar from "../components/Navbar";
@@ -61,13 +60,6 @@ export default function Contact() {
             <textarea class="form-control" rows="5" id="comment" name="comment" required></textarea>
           </div> 
 
-          <div class="form-group form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" name="remember" required />{" "}I agree that all the information is true.
-              <div class="valid-feedback">Valid.</div>
-              <div class="invalid-feedback">Check this checkbox to continue.</div>
-            </label>
-          </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
