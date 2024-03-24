@@ -1,0 +1,63 @@
+{% extends "index.html" %} {% block title %}Payment | {% endblock title %} 
+{% block body %}
+<div class="container-fluid px-5 margin">
+  <h2 class="text-dark">Checkout</h2>
+  <br />
+  <hr />
+  <br />
+
+  <div class="row">
+    <div class="col-lg-6 payment">
+      <h2>Payment Method</h2>
+      <br />
+      <h2>UPI</h2>
+      <br />
+      <img class="qr" src="/static/images/{{ image }}" /> 
+    </div>
+
+    <div class="col-lg-6 payment">
+      <h2>Summary</h2>
+      <br>
+      <div class="d-flex flex-row">
+        <div class="pr-1 col-lg-7"><p class="summary-txt">Original Price:</p></div>
+        <div class="col-lg-5"><p class="summary-txt">₹ {{ original_amount }}</p></div>
+      </div>
+      <div class="d-flex flex-row">
+        <div class="pr-1 col-lg-7"><p class="summary-txt">Discount:</p></div>
+        <div class="col-lg-5"><p class="summary-txt">₹ {{ discount }}</p></div>
+      </div>
+      <hr>
+      <div class="d-flex flex-row">
+        <div class="pr-1 col-lg-7"><p class="summary-txt"><b>Total:</b></p></div>
+        <div class="col-lg-5"><p class="summary-txt"><b>₹ {{ final_amount }}</b></p></div>
+      </div>
+
+      <form class="needs-validation" action="" method="post" novalidate>
+        
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="upiname">Your name in UPI:</label>
+          <input type="text" class="form-control" id="upiname" placeholder="Enter Name" name="upiname"  required/>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="transactionid">Transaction ID:</label>
+          <input type="text" class="form-control" id="transactionid" placeholder="Enter Transaction ID" name="transactionid"  required/>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+          <small id="scoreHelp" class="form-text text-muted">For eg: T2402131221592509143102</small>
+        </div>
+
+        
+        <button type="submit" style="box-sizing:content-box;" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+</div>
+
+{% endblock body %}

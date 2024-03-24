@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+
+{% block title %}Pharmacy Notes | {% endblock title %}
+
+{% block body %}
+<div class="App">
+    <div class="container-fluid bg6">
+      <br /><br /><br /><br /><br /><br />
+      <div class="jumbotron bg-transparent align-items-center mx-auto d-block">
+        <h1>Pharmacy Notes</h1>
+      </div>
+    </div>
+  
+    <br /><br /><br />
+  
+    <div class="container-fluid">
+      <div class="row">
+
+        {% for pharm in pharmacy %}
+        <div class="col-lg-4">
+          <div class="card mb-5 shadow">
+            <img class="card-img-top" height="450" src="/static/images/{{ pharm.image }}" alt="Card image" />
+            <div class="card-body">
+              <h5 class="card-title">{{ pharm.title }}</h5>
+              <p>{{ pharm.publication }}</p>
+              <a href="{{ pharm.link }}" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+    <hr />
+  
+    <div>
+      <h4>JOIN OUR TELEGRAM GROUP FOR MORE PHARMACY NOTES</h4>
+      <div class="socials mb-5">
+        <a href="https://www.github.com/Sharath1036/"><img alt="image" class="icons" src="/static/images/telegram.webp"/></a>
+      </div>
+    </div>
+  </div>
+</div>
+        
+  
+{% endblock body %}

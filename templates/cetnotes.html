@@ -1,0 +1,91 @@
+{% extends "index.html" %}
+
+{% block title %}MHT-CET Notes | {% endblock title %}
+
+{% block body %}
+<div class="App">
+    <div class="container-fluid bgcet">
+      <br /><br /><br /><br /><br /><br />
+      <div class="jumbotron bg-transparent align-items-center mx-auto d-block">
+        <h1>MHT-CET Notes</h1>
+      </div>
+    </div>
+  
+    <br /><br /><br />
+  
+    <div class="container-fluid">
+      <h2>PHYSICS</h2><br>
+      <div class="row">
+        {% for phy in physics %}
+        <div class="col-lg-4">
+          <div class="card mb-5 shadow">
+            <img class="card-img-top" height="450" src="/static/images/{{ phy.image }}" alt="Card image" />
+            <div class="card-body">
+              <h5 class="card-title">{{ phy.title }}</h5>
+              <p>{{ phy.publication }}</p>
+              <a href="{{ phy.link }}" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <hr/><br>
+
+      <h2>CHEMISTRY</h2><br>
+      <div class="row">
+        {% for chem in chemistry %}
+        <div class="col-lg-4">
+          <div class="card mb-5 shadow">
+            <img class="card-img-top" height="450" src="/static/images/{{ chem.image }}" alt="Card image" />
+            <div class="card-body">
+              <h5 class="card-title">{{ chem.title }}</h5>
+              <p>{{ chem.publication }}</p>
+              <a href="{{ chem.link }}" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <hr/><br>
+
+      <h2>MATHS</h2><br>
+      <div class="row">
+        {% for math in mathematics %}
+        <div class="col-lg-4">
+          <div class="card mb-5 shadow">
+            <img class="card-img-top" height="450" src="/static/images/{{ math.image }}" alt="Card image" />
+            <div class="card-body">
+              <h5 class="card-title">{{ math.title }}</h5>
+              <p>{{ math.publication }}</p>
+              <a href="{{ math.link }}" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <hr/><br>
+
+      <h2>BIOLOGY</h2><br>
+      <div class="row">
+        {% for bio in biology %}
+        <div class="col-lg-4">
+          <div class="card mb-5 shadow">
+            <img class="card-img-top" height="450" src="/static/images/{{ bio.image }}" alt="Card image" />
+            <div class="card-body">
+              <h5 class="card-title">{{ bio.title }}</h5>
+              <p>{{ bio.publication }}</p>
+              <a href="{{ bio.link }}" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <hr/><br>
+
+    </div>
+    <hr />
+  </div>
+</div>
+        
+  
+{% endblock body %}

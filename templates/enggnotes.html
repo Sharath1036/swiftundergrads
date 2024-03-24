@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+
+{% block title %}Engineering Notes | {% endblock title %}
+
+{% block body %}
+<div class="App">
+    <div class="container-fluid bg5">
+      <br /><br /><br /><br /><br /><br />
+      <div class="jumbotron bg-transparent align-items-center mx-auto d-block">
+        <h1>Engineering Notes</h1>
+      </div>
+    </div>
+  
+    <br /><br /><br />
+  
+    <div class="container-fluid">
+      <div class="row">
+
+        {% for engg in engineering %}
+        <div class="col-lg-4">
+          <div class="card mb-5 shadow">
+            <img class="card-img-top" height="450" src="/static/images/{{ engg.image }}" alt="Card image" />
+            <div class="card-body">
+              <h5 class="card-title">{{ engg.title }}</h5>
+              <p>{{ engg.publication }}</p>
+              <a href="{{ engg.link }}" target="_blank" class="btn w-100 btn-danger">VIEW PDF</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+    <hr />
+  </div>
+</div>
+        
+  
+{% endblock body %}

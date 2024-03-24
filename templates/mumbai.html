@@ -1,0 +1,112 @@
+{% extends "index.html" %}
+
+{% block title %}Mumbai Counselling | {% endblock title %}
+
+{% block body %}
+<div>
+  <div class="container-fluid bg-counselling">
+    <div class="jumbotron bg-transparent">
+      <h1 align="center">Mumbai Counselling</h1>
+    </div>
+  </div>
+
+    {% comment %} <div class="container mb-5">
+      <h2 class="mt-5">Instructions</h2>
+      <p>This form is supposed to be filled out by the students who want to seek admission into Engineering only in Mumbai. The price for the counselling will be Rs x. After filling your details, in the next page you'll be receiving a QR code for payment. After paying enter your UPI details as asked and further you'll be added in our respective telegram group.</p>
+      <p>The counselling will consist of several webinars which will make students aware of the admission process and personal college list making for students.</p>
+      <p>For students willing to get into Pharmacy, you can fill out the <a href="/maharashtra-counselling"> Maharashtra Counselling</a> form in the Counselling section.</p>
+      <form class="needs-validation" id="mumbai" action="" method="post" novalidate>
+        
+      {% csrf_token %}
+    
+        <div class="form-group">
+          <label for="studentName">Full Name:</label>
+          <input type="text" class="form-control" id="studentName" placeholder="Enter Full Name" name="studentName"  required/>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="studentEmail">Email ID:</label>
+          <input type="email" class="form-control" id="studentEmail" placeholder="Enter Email ID" name="studentEmail" required />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="studentPhone">Phone Number:</label>
+          <input type="text" class="form-control" id="studentPhone" placeholder="Enter Contact Number" name="studentPhone" pattern="[6-9]{1}[0-9]{9}" required /> 
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Invalid Contact Number.</div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="studentTelegram">Telegram Contact Number:</label>
+            <input type="text" class="form-control" id="studentTelegram" placeholder="Enter Contact Number" name="studentTelegram" pattern="[6-9]{1}[0-9]{9}" required /> 
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Invalid Contact Number.</div>
+        </div>
+        
+
+      <div class="form-group">
+        <label for="studentGender">Gender:</label>
+        <select class="form-control" id="studentGender" name="studentGender">
+          <option value="" disabled selected>Choose</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+        
+        <div class="form-group">
+            <label for="studentpcmscore">MHT-CET PCM Percentile:</label>
+            <input type="text" class="form-control" id="studentpcmscore" placeholder="Enter your score" name="studentpcmscore" pattern="[6-9]{1}[0-9]{9}" required /> 
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Invalid Contact Number.</div>
+            <small id="scoreHelp" class="form-text text-muted">Type 0 if you have not appeared.</small>
+        </div>
+
+
+        <div class="form-group">
+          <label for="studentjeescore">JEE Percentile:</label>
+          <input type="text" class="form-control" id="studentjeescore" placeholder="Enter your JEE score" name="studentjeescore"  pattern="[6-9]{1}[0-9]{9}" required /> 
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Invalid Contact Number.</div>
+          <small id="scoreHelp" class="form-text text-muted">Type 0 if you have not appeared.</small>
+        </div>
+
+
+        <div class="form-group">
+            <label for="academy">Academy:</label>
+            <select class="form-control" id="academy" name="academy">
+                <option value="" disabled selected>Choose</option>
+                <option value="wakade">Wakade's Classes</option>
+                <option value="saraswati">Saraswati Coaching Classes</option>
+                <option value="nota">None Of The Above</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+          <label for="studentCategory">Category</label>
+          <select class="form-control" id="gender" name="gender">
+            <option value="" disabled selected>Choose</option>
+            <option value="male">Open</option>
+            <option value="female">OBC</option>
+            <option value="female">SC</option>
+            <option value="female">ST</option>
+            <option value="female">NT</option>
+            <option value="female">VJ/DT</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Next</button>
+      </form>      
+    </div> {% endcomment %}
+
+    <div class="text-center my-5">Coming soon :)</div>
+  </div>
+</div>
+
+{% endblock body %}
