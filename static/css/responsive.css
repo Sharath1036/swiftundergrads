@@ -8,6 +8,27 @@
       background: black;
     }
   
+    .title, .number, {
+      font-size: 40px;
+    }
+
+    .subtitle, .stats,{
+      font-size: 30px;
+    }
+
+    .bg4 {
+      padding-top: 40%;
+    }
+
+    .counsel-text {
+      font-size: 60px;
+      padding-top: 30%;
+    }
+    
+    .bg7 {
+      padding-top: 30%;
+    }
+
     .navbar-brand, .navbar-nav.ml-auto li a {
       color: white;
     }

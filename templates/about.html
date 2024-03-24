@@ -27,9 +27,9 @@
         <div class="card cards mb-4 bg-transparent" style="border: 2px solid #f4fcfc; border-radius: 15px; box-shadow: 4px 4px 2px 2px lightblue; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600;">
         <img alt="{{ about.name }}" class="mx-auto d-flex pt-4" src="static/images/{{ about.image }}" width="250" height="250" />
         <br />
-        <h6 style="font-size: 35px;">{{ about.name }}</h6>
-        <p class="pb-2" style="font-size: 20px; font-weight: 100;">{{ about.role }}</p>
-        <div>
+        <h6 style="font-size: 35px; text-align: center;">{{ about.name }}</h6>
+        <p class="pb-2" style="font-size: 20px; font-weight: 100; text-align: center;">{{ about.role }}</p>
+        <div class="text-center">
           {% if about.linkedin %}
           <div class="socials"><a href="https://linkedin.com/in/{{ about.linkedin }}"><img alt="image" class="icons" src="static/images/linkedin.png" /></a></div>
           {% endif %}
@@ -45,6 +45,7 @@
           {% endif %}
           <br /><br />
         </div>
+      </div>
       </div>
       </div>
       {% endfor %}
