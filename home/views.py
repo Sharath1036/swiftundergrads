@@ -38,7 +38,7 @@ def index(request):
             {
                 "name": "Webinars",
                 "image": "webinars.png",
-                "color": "ffb399",
+                "color": "#ffb399",
                 "description": "We conduct various webinars to help students in their MHT-CET preparation and make them understand the admission process and provide them knowledge regarding colleges and areas of study.",
             },
             {
