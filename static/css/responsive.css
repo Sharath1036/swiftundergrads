@@ -112,8 +112,17 @@
   
   /* Tablets, Ipads, Mobiles in desktop mode */
   @media (min-width: 768px) and (max-width: 1024px) {
-    .card {
-      width: 50%;
+    .services {
+      min-height: 380px;
+    }
+
+    h6 {
+      text-align: left;
+      font-size: 23px;
+    }
+
+    .h6 {
+      font-size: 28px;
     }
   
     .col-lg-4 {
