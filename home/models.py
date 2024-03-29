@@ -8,7 +8,7 @@ class Contact(models.Model):
     fname = models.CharField(max_length=40)
     lname = models.CharField(max_length=40)
     email = models.EmailField(max_length=40)
-    contactno = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),])
+    contactno = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),])
     comment = models.TextField()
     date = models.DateTimeField()
 
@@ -18,7 +18,6 @@ class Contact(models.Model):
     class Meta:
         verbose_name = "Contact Page Responses"
         verbose_name_plural = "Contact Page Responses"
-
 
 
 # Mumbai Counselling
@@ -36,11 +35,11 @@ class MumbaiCounselling(models.Model):
 
     studentName = models.CharField(max_length=40, null=True, blank=True)
     studentEmail = models.EmailField(max_length=40, null=True, blank=True)
-    studentPhone = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
-    studentTelegram = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    studentPhone = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    studentTelegram = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
     studentGender = models.CharField(max_length=40, choices=GENDER_CHOICES, null=True, blank=True)
-    studentpcmscore = models.PositiveIntegerField(null=True, blank=True)
-    studentjeescore = models.PositiveIntegerField(null=True, blank=True)
+    studentpcmscore = models.PositiveBigIntegerField(null=True, blank=True)
+    studentjeescore = models.PositiveBigIntegerField(null=True, blank=True)
     academy = models.CharField(max_length=40, choices=ACADEMY, null=True, blank=True)
     date = models.DateTimeField()
 
@@ -105,13 +104,13 @@ class Aniket(models.Model):
     ]
     
     name = models.CharField(max_length=40, null=True, blank=True)
-    phone = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
-    telegram = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    phone = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    telegram = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
     email = models.EmailField(max_length=40, null=True, blank=True)
     gender = models.CharField(max_length=40, choices=GENDER_CHOICES, null=True, blank=True)
-    pcmscore = models.PositiveIntegerField(null=True, blank=True)
-    pcbscore = models.PositiveIntegerField(null=True, blank=True)
-    centralscore = models.PositiveIntegerField(null=True, blank=True)
+    pcmscore = models.PositiveBigIntegerField(null=True, blank=True)
+    pcbscore = models.PositiveBigIntegerField(null=True, blank=True)
+    centralscore = models.PositiveBigIntegerField(null=True, blank=True)
     preference = models.CharField(max_length=40, choices=PREFERENCE, null=True, blank=True)
     locations = models.CharField(max_length=40, choices=DISTRICT, null=True, blank=True)
     source = models.CharField(max_length=40, null=True, blank=True)
@@ -177,13 +176,13 @@ class Samkit(models.Model):
     ]
     
     name = models.CharField(max_length=40, null=True, blank=True)
-    phone = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
-    telegram = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    phone = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    telegram = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
     email = models.EmailField(max_length=40, null=True, blank=True)
     gender = models.CharField(max_length=40, choices=GENDER_CHOICES, null=True, blank=True)
-    pcmscore = models.PositiveIntegerField(null=True, blank=True)
-    pcbscore = models.PositiveIntegerField(null=True, blank=True)
-    centralscore = models.PositiveIntegerField(null=True, blank=True)
+    pcmscore = models.PositiveBigIntegerField(null=True, blank=True)
+    pcbscore = models.PositiveBigIntegerField(null=True, blank=True)
+    centralscore = models.PositiveBigIntegerField(null=True, blank=True)
     preference = models.CharField(max_length=40, choices=PREFERENCE, null=True, blank=True)
     locations = models.CharField(max_length=40, choices=DISTRICT, null=True, blank=True)
     source = models.CharField(max_length=40, null=True, blank=True)
@@ -249,13 +248,13 @@ class Swift(models.Model):
     ]
     
     name = models.CharField(max_length=40, null=True, blank=True)
-    phone = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
-    telegram = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    phone = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    telegram = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
     email = models.EmailField(max_length=40, null=True, blank=True)
     gender = models.CharField(max_length=40, choices=GENDER_CHOICES, null=True, blank=True)
-    pcmscore = models.PositiveIntegerField(null=True, blank=True)
-    pcbscore = models.PositiveIntegerField(null=True, blank=True)
-    centralscore = models.PositiveIntegerField(null=True, blank=True)
+    pcmscore = models.PositiveBigIntegerField(null=True, blank=True)
+    pcbscore = models.PositiveBigIntegerField(null=True, blank=True)
+    centralscore = models.PositiveBigIntegerField(null=True, blank=True)
     preference = models.CharField(max_length=40, choices=PREFERENCE, null=True, blank=True)
     locations = models.CharField(max_length=40, choices=DISTRICT, null=True, blank=True)
     source = models.CharField(max_length=40, null=True, blank=True)
@@ -319,13 +318,13 @@ class Others(models.Model):
     ]
     
     name = models.CharField(max_length=40, null=True, blank=True)
-    phone = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
-    telegram = models.IntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    phone = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
+    telegram = models.BigIntegerField(validators=[MinValueValidator(6000000000, message='Invalid contact number'), MaxValueValidator(9999999999, message='Invalid contact number'),], null=True, blank=True)
     email = models.EmailField(max_length=40, null=True, blank=True)
     gender = models.CharField(max_length=40, choices=GENDER_CHOICES, null=True, blank=True)
-    pcmscore = models.PositiveIntegerField(null=True, blank=True)
-    pcbscore = models.PositiveIntegerField(null=True, blank=True)
-    centralscore = models.PositiveIntegerField(null=True, blank=True)
+    pcmscore = models.PositiveBigIntegerField(null=True, blank=True)
+    pcbscore = models.PositiveBigIntegerField(null=True, blank=True)
+    centralscore = models.PositiveBigIntegerField(null=True, blank=True)
     preference = models.CharField(max_length=40, choices=PREFERENCE, null=True, blank=True)
     locations = models.CharField(max_length=40, choices=DISTRICT, null=True, blank=True)
     source = models.CharField(max_length=40, null=True, blank=True)
