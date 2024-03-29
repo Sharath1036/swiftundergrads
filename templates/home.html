@@ -66,10 +66,10 @@
     <div class="row">
 
       {% for service in services%}
-      <div class="col-lg-4 text-lg-left">
+      <div class="col-lg-4 service-col text-lg-left">
         <div class="card border-0 my-3 p-4 position-relative services" style="background-color: #f4fcfc; border-radius:10px;">
           <div class="rounded-image rounded-circle d-flex justify-content-center my-3" style="background-color: {{ service.color }};"><img class="mx-auto d-block" src="/static/images/{{ service.image }}" style="object-fit: contain;" height="50" width="50"></div>
-          <h6 style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;">{{ service.name }}</h6>
+          <h6 style="font-size: 25px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;">{{ service.name }}</h6>
           <p style="text-align: left;">{{ service.description }}</p>
         </div>
       </div>
