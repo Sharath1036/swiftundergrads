@@ -62,7 +62,7 @@
   }
   
   /* Low resolution  Tablets, Ipads */
-  @media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 674px) {
     .bg-footer {
       height: 135px;
     }
@@ -111,7 +111,7 @@
   }
   
   /* Tablets, Ipads, Mobiles in desktop mode */
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 675px) and (max-width: 1024px) {
     .services {
       min-height: 380px;
     }
