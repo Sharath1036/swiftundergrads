@@ -116,17 +116,13 @@
       min-height: 380px;
     }
 
-    .card {
-      min-width: 350px;
-    }
-
     h6 {
       text-align: left;
       font-size: 23px;
     }
 
     .h6 {
-      font-size: 28px;
+      font-size: 35px;
     }
   
     .col-lg-4 {
