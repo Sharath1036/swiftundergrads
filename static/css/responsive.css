@@ -1,5 +1,5 @@
 /* Mobile Devices*/
-@media (max-width: 480px) {
+@media (max-width: 634px) {
     .bg-footer {
       height: 160px;
     }
@@ -62,7 +62,7 @@
   }
   
   /* Low resolution  Tablets, Ipads */
-  @media (min-width: 481px) and (max-width: 550px) {
+  @media (min-width: 635px) and (max-width: 921px) {
     .bg-footer {
       height: 135px;
     }
@@ -76,7 +76,7 @@
     }
   
     .col-lg-4 {
-      width: 85%;
+      width: 50%;
       margin: auto;
       display: block;
     }
@@ -111,7 +111,7 @@
   }
   
   /* Tablets, Ipads, Mobiles in desktop mode */
-  @media (min-width: 551px) and (max-width: 1024px) {
+  @media (min-width: 922px) and (max-width: 1024px) {
     .services {
       min-height: 380px;
     }
@@ -126,6 +126,7 @@
     } 
 
     .col-lg-4 {
+      width: 33%;
       margin: auto;
       display: block;
     }
